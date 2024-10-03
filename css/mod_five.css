@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: rgb(7, 4, 173); 
+    text-align: center;
+}
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: rgb(97, 4, 4); 
+    text-align: center;   
+}
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color: rgb(243, 12, 12);
+}
+    /*Title Image*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:30vh;
+    border: solid blue 3px;
+    border-radius: 30px;
+    filter: blur(1px);
+}
+.navbar {
+    width: 100%;
+    background-color: #8dbfee;
+    overflow: auto;
+ }
+  
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: rgb(97, 4, 4);
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+}
+  
+.navbar a:hover {
+    background-color: whitesmoke;
+}
+  
+.navbar a.active {
+    background-color: #7fced8;
+}
+  
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+}
+
+/*Catocyclopedia*/
+table {
+    border: dashed blue 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+
+th, td {
+    border:1px solid black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+td {
+    padding-left: 5px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr:nth-child(1) {
+    background-color: blue;
+    color:aliceblue;
+}
+
+  /*Gallery 2 columns*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.column {
+    flex: 46%;
+    margin: 1%;
+    padding: 10px;
+    background-color: rgb(188, 214, 206);
+    border-radius: 30px;
+}
+.gall_1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: solid blue 3px;
+    border-radius: 30px;
+}
+.gall_2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: solid blue 3px;
+    border-radius: 30px;
+}
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; 
+    align-items: center;
+    background: RGBA(0,0,0, .5);
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(142, 200, 233);
+}
+
+.centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+}
+footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a:hover {
+    background-color: yellow;
+}
+b:hover {
+    background-color: rgb(55, 214, 140);
+}
+
+/*Hover Image*/
+.container_a {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 30vh;
+    padding-top: 15px;
+}
+
+.image_a {
+    opacity: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.container_a:hover .image_a {
+    opacity: 0.3;
+}
+  
+.container_a:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    background-color: #8dcbe7;
+    color: white;
+    font-size: 16px;
+    /*padding: 16px 32px;*/
+}
+.container_b {
+    position: relative;
+    border: solid blue 3px;
+    display: block;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 30vh;
+}
+
+.top-left {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    left: 12%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container_b:hover .top-left {
+    opacity: 1;
+}
